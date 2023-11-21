@@ -1,6 +1,6 @@
 package java_basic;
 
-public class D03_04_IF_SubjectScore {
+public class D003_04_IF_SubjectScore {
 
 	public static void main(String[] args) {
 //		if 문을 활용한 점수등급 자동분류

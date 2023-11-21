@@ -2,7 +2,7 @@ package java_basic;
 
 import java.util.Scanner;
 
-public class D02_04_Banallim {
+public class D002_04_Banallim {
 
 	public static void main(String[] args) {		
 

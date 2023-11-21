@@ -1,6 +1,6 @@
 package java_basic;
 
-public class D02_02_Casting {
+public class D002_02_Casting {
 
 	public static void main(String[] args) {
 		// 바이트와 바이트의 계산은 안됨

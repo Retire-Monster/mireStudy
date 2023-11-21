@@ -2,7 +2,7 @@ package java_basic;
 
 import java.util.Scanner;
 
-public class D03_06_IfElse_Multiple0 {
+public class D003_06_IfElse_Multiple0 {
 
 	public static void main(String[] args) {
 //		입력한 정수가 2,3,5의 배수인지 판별하시오

@@ -1,6 +1,6 @@
 package java_basic;
 
-public class D01_01_ScorrSumAtion {
+public class D001_01_ScorrSumAtion {
 	public static void main(String[] args) {
 		//변수의 초기화 작업
 		int kor=78;

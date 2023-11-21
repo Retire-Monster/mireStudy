@@ -2,7 +2,7 @@ package java_basic;
 
 import java.util.Scanner;
 
-public class D03_Q1_ScissorsRockPaper {
+public class D003_Q1_ScissorsRockPaper {
 
 	public static void main(String[] args) {
 //		랜덤변수와 조건문, 스캔함수를 활용하여 가위바위보 게임 만들기

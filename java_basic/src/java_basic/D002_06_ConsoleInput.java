@@ -2,7 +2,7 @@ package java_basic;
 
 import java.util.Scanner;
 
-public class D02_06_ConsoleInput {
+public class D002_06_ConsoleInput {
 
 	public static void main(String[] args) {
 //		임포트 단축키 Ctrl + Shifte + O

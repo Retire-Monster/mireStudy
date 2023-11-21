@@ -1,6 +1,6 @@
 package java_basic;
 
-public class D02_05_SubjectScore {
+public class D002_05_SubjectScore {
 
 	public static void main(String[] args) {
 		//f 포멧팅의 활용

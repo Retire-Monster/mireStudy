@@ -1,6 +1,6 @@
 package java_basic;
 
-public class D02_01_Variable {
+public class D002_01_Variable {
 
 	public static void main(String[] args) {
 		

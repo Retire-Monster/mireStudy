@@ -2,7 +2,7 @@ package java_basic;
 
 import java.util.Scanner;
 
-public class D02_03_Operation1 {
+public class D002_03_Operation1 {
 
 	public static void main(String[] args) {
 //==================================================================================//

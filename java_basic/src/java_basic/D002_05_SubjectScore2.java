@@ -2,7 +2,7 @@ package java_basic;
 
 import java.util.Scanner;
 
-public class D02_05_SubjectScore2 {
+public class D002_05_SubjectScore2 {
 
 	public static void main(String[] args) {
 		

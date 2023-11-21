@@ -2,7 +2,7 @@ package java_basic;
 
 import java.util.Scanner;
 
-public class D03_05_IfElse_OddEven {
+public class D003_05_IfElse_OddEven {
 
 	public static void main(String[] args) {
 //		임의의 정수 하나를 입력받아 홀수 혹은 짝수인지를 판별하는 프로그램을 작성하시오

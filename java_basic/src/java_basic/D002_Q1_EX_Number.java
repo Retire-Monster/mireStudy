@@ -1,6 +1,6 @@
 package java_basic;
 
-public class D02_Q1_EX_Number {
+public class D002_Q1_EX_Number {
 
 	public static void main(String[] args) {
 //		4자리 정수를 입력받아 각 자리수를 출력하는 프로그램을 작성하시오

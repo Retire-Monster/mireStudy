@@ -1,6 +1,6 @@
 package java_basic;
 
-public class D03_01_CompareOperation {
+public class D003_01_CompareOperation {
 
 	public static void main(String[] args) {
 

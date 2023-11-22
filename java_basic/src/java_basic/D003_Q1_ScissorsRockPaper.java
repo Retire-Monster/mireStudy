@@ -6,7 +6,6 @@ public class D003_Q1_ScissorsRockPaper {
 
 	public static void main(String[] args) {
 //		랜덤변수와 조건문, 스캔함수를 활용하여 가위바위보 게임 만들기
-
 		Scanner scann = new Scanner(System.in);
 		double random = Math.random();
 		int target = 0;
@@ -20,8 +19,7 @@ public class D003_Q1_ScissorsRockPaper {
 		String printUser = "";
 
 		System.out.println("가위 바위 보 게임입니다.");
-//		target = (int) (random * 3);
-		target = 2;
+		target = (int) (random * 3);
 		System.out.println("컴퓨터는 값을 정했습니다");
 		System.out.println("아래 표를 참고하여 정수를 입력해 컴퓨터를 이기십시오");
 		System.out.println("가위 : 0 | 바위 : 1 | 보 : 2");
@@ -35,6 +33,8 @@ public class D003_Q1_ScissorsRockPaper {
 //		짐		가위  0 < 바위	1
 //		짐		바위  1 < 보	2
 //		짐		보    2 < 가위	3
+		
+		
 
 		startBool = ((userInput > 2) || (userInput < 0));
 
@@ -67,6 +67,9 @@ public class D003_Q1_ScissorsRockPaper {
 
 				if ((target == 2) && (userInput == 0)) {
 					userInput = 3;
+				}
+				if ((target == 0) && (userInput == 2)) {
+					target = 3;
 				}
 
 				winningBool = userInput > target;

@@ -49,10 +49,12 @@ public class D004_01_Switch {
 //		마지막에 사용된 default 문은 case 이외의 모든것을 말한다.	
 
 		switch (inputInt % 7) {
-		case 0:case 1:
+		case 0:
+		case 1:
 			System.out.println("나머지가 0 또는 1 입니다.");
 			break;
-		case 2:case 3:
+		case 2:
+		case 3:
 			System.out.println("나머지가 2 또는 3 입니다.");
 			break;
 		case 4:

@@ -1,5 +1,7 @@
 package java_basic;
 
+import java.util.Scanner;
+
 public class D005_Q1_Lottery {
 
 	public static void main(String[] args) {
@@ -15,6 +17,44 @@ public class D005_Q1_Lottery {
 //								거스름돈 : ￦200		//
 //======================================================//
 
+		// 선언
+		Scanner scann = new Scanner(System.in);
+
+		int userInput = 0;
+		int money = 0;
+		int lotterNum = 0;
+		int target = 0;
+		double random = Math.random();
+		boolean change = false;
+		String lotteryOutput = "";
+		int[] lotteryData = new int[45];
+
+		// 입력
+		System.out.print("금액을 입력 : ");
+		userInput = scann.nextInt();
+		scann.nextLine();
+		// 처리
+		for (int i = 0; i < 45; i++) {
+			lotteryData[i] = (i+1);
+		}
+
+		for (int i = 0; i < 6; i++) {
+			target = (int) (random * 44);
+			lotteryData[i] = lotterNum;
+			lotteryData[target] = lotteryData[i];
+			lotteryData[target] = lotterNum;
+			System.out.println(lotteryOutput);
+		}
+		
+		for (int i = 0; i < 6; i++) {
+			lotteryOutput += lotteryData[i];
+		}
+		
+		// 출력
+		System.out.println(lotteryOutput);
+		if (money>0) {
+			System.out.println("거스름돈 : ￦" + money);
+		}
 
 	}
 

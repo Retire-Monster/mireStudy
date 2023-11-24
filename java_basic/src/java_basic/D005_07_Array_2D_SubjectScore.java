@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import javax.security.auth.Subject;
 
-public class D005_07_Array_2D_SubjectScore3 {
+public class D005_07_Array_2D_SubjectScore {
 	public static void main(String[] args) {
 //		
 		// ¼±¾ð
@@ -56,7 +56,6 @@ public class D005_07_Array_2D_SubjectScore3 {
 				total[i] += score[i][j];
 			}
 		}
-		
 		for (int i = 0; i < STUDEN_NUM; i++) {
 			evg[i] = (int) (total[i] / (float) SUBJECT_NUM * 100 + 0.5f) / 100f;
 		}

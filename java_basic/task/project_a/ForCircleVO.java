@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class ForCircleVO {
 	
-	final double PI = Math.PI;
-	int radius = 0;
-	float answer = 0;
+	public final double PI = Math.PI;
+	public int radius = 0;
+	public float answer = 0;
 	
 	
 	public void UserInput() {

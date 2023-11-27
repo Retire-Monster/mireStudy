@@ -1,9 +1,10 @@
-package project_a;
+package project_a.main;
 
 import java.util.Scanner;
-import project_a.ForTriangleVO;
-import project_a.ForTetragonVO;
+
 import project_a.ForCircleVO;
+import project_a.ForTetragonVO;
+import project_a.ForTriangleVO;
 
 public class UserInterfaceVO {
 

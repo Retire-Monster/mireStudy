@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class ForTetragonVO {
 
-	int baseLine = 0;
-	int high = 0;
-	int answer = 0;
+	public int baseLine = 0;
+	public int high = 0;
+	public int answer = 0;
 	
 	public void UserInput() {
 	Scanner scann = new Scanner(System.in);

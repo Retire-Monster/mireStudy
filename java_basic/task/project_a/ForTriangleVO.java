@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class ForTriangleVO {
 	
-	int baseLine = 0;
-	int high = 0;
-	int answer = 0;
+	public int baseLine = 0;
+	public int high = 0;
+	public float answer = 0;
 	
 	
 	public void UserInput() {

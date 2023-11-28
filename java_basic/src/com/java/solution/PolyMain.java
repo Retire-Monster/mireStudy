@@ -1,18 +1,14 @@
-package ex_project_a.main;
+package com.java.solution;
+
+import com.java.main.SurfaceSolution;
 
 public class PolyMain {
 
 	public static void main(String[] args) {
-		
 		SurfaceSolution main = new SurfaceSolution();
 		
-		do {
-			main.input();
-
-			main.process();
-
-			main.output();
-		} while (true);
+		main.start();
+	
 	}
 
 }

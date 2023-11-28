@@ -24,25 +24,25 @@ public class SurfaceSolution {
 		case 1:
 			triangleVO = new TriangleVO();
 			System.out.print("밑변 : ");
-			triangleVO.baseLine = scann.nextInt();
+			triangleVO.setBaseLine(scann.nextInt());
 			scann.nextLine();
 			System.out.print("높이 : ");
-			triangleVO.height = scann.nextInt();
+			triangleVO.setHeight(scann.nextInt()); 
 			scann.nextLine();
 			break;
 		case 2:
 			rectangularVO = new RectangularVO();
 			System.out.print("가로 : ");
-			rectangularVO.garo = scann.nextInt();
+			rectangularVO.setGaro(scann.nextInt());
 			scann.nextLine();
 			System.out.print("세로 : ");
-			rectangularVO.sero = scann.nextInt();
+			rectangularVO.setSero(scann.nextInt());
 			scann.nextLine();
 			break;
 		case 3:
 			circleVO = new CircleVO();
 			System.out.print("반지름 : ");
-			circleVO.radius = scann.nextInt();
+			circleVO.setRadius(scann.nextInt());
 			scann.nextLine();
 			break;
 		default:

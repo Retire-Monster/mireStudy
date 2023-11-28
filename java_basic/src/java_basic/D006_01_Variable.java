@@ -10,15 +10,15 @@ public class D006_01_Variable {
 
 //	전역변수는 아래 'sum' 같이 해당 클래스 전체에서 사용하는 변수이다.
 //	전역변수의 특징은 해당 class 내부 전체에서 사용이 가능하다.
-	int sum = 0;
+//	int sum = 0;
 
 //	지역변수는 아래 'i' 와 같이 클래스 필드에 새로 만들어진 블레이스 내부에 작성된 변수이다.
 //	지역변수의 특징은 선언된 블레이스 내부에만 사용이 가능하다.
-	for(
-	int i = 0;i<1;i++)
-	{
-		sum += i;
-	}
+//	for(
+//	int i = 0;i<1;i++)
+//	{
+//		sum += i;
+//	}
 
 // 	'this'는 인스턴스를 대신하는 값이다.
 //	인스턴스를 생성하였을 때 메소드 외부의 변수를 확인 할 수 없는 부분을
@@ -32,13 +32,13 @@ public class D006_01_Variable {
 //	System.out.print 문과 같이 어떤 타입의 변수가 들어와도 대응할 수 있도록 만든 것
 //	오버 로딩은 하나의 'class' 안에서 메소드의 
 //	'리턴타입' '메소드명' ('경우의 수')
-	public D006_01_Variable(int baseLine, int high) {
-	}
+//	public D006_01_Variable(int baseLine, int high) {
+//	}
 //	단 컴파일러는 자료형만 확인함으로 아래와 같이 선언 할 경우
 //	중복오류를 반환한다.
-	public D006_01_Variable(int baseLine, int high) {}
-	public D006_01_Variable(int high, int baseLine) {}
-	
+//	public D006_01_Variable(int baseLine, int high) {}
+//	public D006_01_Variable(int high, int baseLine) {}
+//	
 //	타입을 달리 하면 중복 오류를 반환하지 않으며 순서도 맞춰야한다.
 //	단 변수명이 다른경우 오버로딩으로 보지 않는다.
 //	public '변수명'(String baseLine, char high) {}

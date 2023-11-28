@@ -2,7 +2,7 @@ package ex_project_a;
 
 public class CircleVO {
 	
-	public int radius;
+	private int radius;
 
 	public CircleVO(){}
 
@@ -12,6 +12,14 @@ public class CircleVO {
 	
 	public int surface() {
 		return (int)(radius * radius * Math.PI);
+	}
+
+	public int getRadius() {
+		return radius;
+	}
+
+	public void setRadius(int radius) {
+		this.radius = radius;
 	}
 	
 }

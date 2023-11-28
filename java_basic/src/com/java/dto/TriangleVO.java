@@ -1,21 +1,21 @@
-package ex_project_a;
+package com.java.dto;
 
-public class TriangleVO {
-//	외부의 변수접근 차단
+import java.util.Scanner;
+
+public class TriangleVO extends Shape {
+
 	private int height = 10;
 	private int baseLine = 100;
 	
 
-	// 선언
 	public TriangleVO() {
 	}
-
-	// 오버로딩
+	
 	public TriangleVO(int height, int baseLine) {
 		this.height = height;
 		this.baseLine = baseLine;
 	}
-
+	
 	public int surface() {
 		return (int) (height * baseLine * 0.5f);
 	}
@@ -23,17 +23,7 @@ public class TriangleVO {
 	public static int surface(int height, int baseLine) {
 		return (int) (height * baseLine * 0.5f);
 	}
-//	캡슐화
-//	사용자에게 값을 변경 할 수 있는 변수를 알려줌
-//	public void setHeight(int height) {
-//		this.height = height;
-//	}
-//	
-//	public int getHeight() {
-//		return this.height;
-//	}
-	
-//	이클립스의 set자동화 기능
+
 	public int getHeight() {
 		return height;
 	}
@@ -48,6 +38,23 @@ public class TriangleVO {
 
 	public void setBaseLine(int baseLine) {
 		this.baseLine = baseLine;
+	}
+
+	@Override
+	public void inputData() {
+		Scanner scann = new Scanner(System.in);
+		
+		System.out.print("밑변 : ");
+		this.baseLine = scann.nextInt();
+		scann.nextLine();
+		System.out.print("높이 : ");
+		this.height = scann.nextInt();
+		scann.nextLine();
+	}
+
+	@Override
+	public String outputMessage() {
+		return "삼각형의 넓이 : ";
 	}
 	
 

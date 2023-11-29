@@ -8,7 +8,5 @@ public abstract class Shape {
 	public final static String copyWriter = "제작자";
 //  접근값 고정값 공유형 자료형	변수명	=	값
 
-	public abstract void inputData();
 	public abstract int surface();
-	public abstract String outputMessage();
 }

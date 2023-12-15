@@ -2,13 +2,13 @@ package com.java.dto;
 
 import java.util.Scanner;
 
-public class ScoreVO {
+public class ScoreVO implements Comparable<ScoreVO>{
 
-	public String name;
-	public int kor;
-	public int eng;
-	public int math;
-	public int scien;
+	private String name;
+	private int kor;
+	private int eng;
+	private int math;
+	private int scien;
 
 	public  int total() {
 		return kor + eng + math + scien;
@@ -50,6 +50,38 @@ public class ScoreVO {
 	public void printScore() {
 		System.out.println(name +"\t"+kor+"\t"+eng+"\t"+math+"\t"+scien+"\t"+total()+"\t"+evg());
 		
-		
+	}
+//  이름을 기준으로 정렬(오름차순)
+	@Override
+	public int compareTo(ScoreVO other) {
+		return this.name.compareTo(other.getName());
+	//  (내림차순) other.name.compareTo(this.getName());
+	}
+//  토탈점수 오름차순 정렬을 위한것
+//	public int compareTo(Object o) {
+//		if ( !(o instanceof ScoreVO)) return -1;
+//		
+//		ScoreVO other = (ScoreVO)o;
+//		return other.total() - this.total();
+//	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getKor() {
+		return kor;
+	}
+
+	public int getEng() {
+		return eng;
+	}
+
+	public int getMath() {
+		return math;
+	}
+
+	public int getScien() {
+		return scien;
 	}
 }

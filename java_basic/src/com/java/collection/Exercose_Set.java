@@ -1,32 +1,40 @@
 package com.java.collection;
 
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.TreeSet;
+
+import com.java.comparator.ScoreTotalComparator;
+import com.java.dto.ScoreVO;
 
 public class Exercose_Set {
 
 	public static void main(String[] args) {
-		
-		Set set = new HashSet();
-		
-		set.add(1);
-		set.add(2);
-		set.add('a');
-		set.add("a");
-		set.add(false);
-		set.add(1.0f);
-		set.add(1.0);
-		set.add(1l);
-		
-		System.out.println("Set ªÁ¿Ã¡Ó : " +set.size());
-		Iterator it = set.iterator();
-		
-		
-		while(it.hasNext()) {
-			System.out.println(it.next());
 
+		Set<ScoreVO> set = new TreeSet<ScoreVO>();
+		Set<ScoreVO> treeSetByComparator = new TreeSet<ScoreVO>(new ScoreTotalComparator());
+
+		
+
+		for(int i=0;i<3;i++) {
+			ScoreVO score1 = new ScoreVO();
+			score1.input();
+			
+			set.add(score1);
+			treeSetByComparator.add(score1);
 		}
 		
+		Iterator<ScoreVO> it = set.iterator();
+		while (it.hasNext()) {
+			it.next().printScore();
+		}
+		System.out.println("-------------------------------");
+		
+		it = treeSetByComparator.iterator();
+		while (it.hasNext()) {
+			it.next().printScore();
+
+		}
+
 	}
 }

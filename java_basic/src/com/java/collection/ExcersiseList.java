@@ -16,11 +16,13 @@ public class ExcersiseList {
 		
 //		Integer a = 1;
 		
+		list.add(3);
 		list.add(1);
 		list.add(2);
+//		list.add(0,5);		// list.set(번지,값) <- 입력된 번지에 입력값을 추가(다른 값 뒤로 밀림)
+		list.set(0,5);		// list.set(번지,값) <- 입력된 번지의 값을 입력값으로 변경
+		list.add(6);
 		list.add(4);
-		list.add(2);
-		list.add(5);
 //		list.add('a');
 //		list.add("a");
 //		list.add(false);
@@ -29,7 +31,7 @@ public class ExcersiseList {
 //		list.add(1l);
 		
 		
-		Collections.sort(list,Collections.reverseOrder());
+//		Collections.sort(list,Collections.reverseOrder());
 		
 		for(int i=0;i<list.size();i++) {
 			System.out.println(i+"번지값 : "+list.get(i));

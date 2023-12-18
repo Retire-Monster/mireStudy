@@ -1,5 +1,6 @@
 package com.java.collection;
 
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
@@ -12,6 +13,7 @@ public class Exercose_Set {
 	public static void main(String[] args) {
 
 		Set<ScoreVO> set = new TreeSet<ScoreVO>();
+//		Set<ScoreVO> set = new HashSet<ScoreVO>();
 		Set<ScoreVO> treeSetByComparator = new TreeSet<ScoreVO>(new ScoreTotalComparator());
 
 		

@@ -8,10 +8,10 @@ public class ScoreMain {
 
 		ScoreVO s = new ScoreVO();
 
-		s.kor 	= 98;
-		s.eng 	= 90;
-		s.math 	= 87;
-		s.scien = 78;
+//		s.kor 	= 98;
+//		s.eng 	= 90;
+//		s.math 	= 87;
+//		s.scien = 78;
 
 		System.out.println("ÃÑÁ¡ : "+s.total());
 		System.out.println("Æò±Õ : "+s.evg());

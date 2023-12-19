@@ -10,19 +10,19 @@ public class Example03 {
 
 		try {
 			File file = new File("example03.txt");
-		
-		if (!file.exists())
-			file.createNewFile();
-		
-		FileWriter myWriter = new FileWriter(file);
-		
-		myWriter.write("Hello!!\n");
-		myWriter.write("Java Programming");
-		myWriter.close();
-		
+			if (!file.exists())
+				file.createNewFile();
+			
+			FileWriter myWriter = new FileWriter(file);
+			
+			myWriter.write("Hello!!\n");
+			myWriter.write("Java Programming");
+			myWriter.close();
+			
 			System.out.println("\n 파일 쓰기 성공");
 		} catch (IOException e) {
 			System.out.println(e);
 		}
 	}
 }
+

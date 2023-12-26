@@ -11,8 +11,7 @@ public class MainController {
 		
 		Scanner scann = new Scanner(System.in);
 		String meun = scann.nextLine();
-		
+
 		return meun;
 	}
-
 }

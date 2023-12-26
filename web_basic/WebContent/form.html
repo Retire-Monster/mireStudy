@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- action의 디폴트는 현재 디렉토리, method의 기본값은 get -->
+	<form action="hello.html" method="get">
+		who : <input type="text" name="who"><br>
+		message : <textarea cols="100" rows="10" name="message"></textarea>
+		<br>
+		<input type="submit" value="get">
+	</form>
+	<hr>
+		<form action="hello.html" method="post">
+		who : <input type="text" name="who"><br>
+		message : <textarea cols="100" rows="10" name="message"></textarea>
+		<br>
+		<input type="submit" value="post">
+	</form>
+	<hr>
+		<form action="hello.html" method="delete">
+		who : <input type="text" name="who"><br>
+		message : <textarea cols="100" rows="10" name="message"></textarea>
+		<br>
+		<input type="submit" value="delete">
+	</form>
+</body>
+</html>

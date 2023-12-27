@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 나의 목적에 맞는 태그 제작을 위한 xml 이다. -->
+
+<web-app>
+	<!-- servlet의 타입명 -->
+	<servlet>
+		<servlet-name>hello</servlet-name>
+		<servlet-class>com.jsp.servlet.HelloServlet</servlet-class>
+	</servlet>
+	
+	<!-- 목적지 -->
+	<servlet-mapping>
+		<servlet-name>hello</servlet-name>
+		<url-pattern>/hello.html</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
